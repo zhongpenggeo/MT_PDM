@@ -1,0 +1,108 @@
+grid_500_TFM:
+  TRAIN_PATH: ../../Data/data/train_grid_84_5000_3.mat
+  TEST_PATH:  ../../Data/data/test_grid_84_500_3.mat
+  save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
+  patience: 10
+  check: False
+  cuda_id: 3 # gpu ids, e.g. 0,1,2,3
+  layer_num: 4 # number of fno layer
+  last_size: 128 # size of last layer
+  modes: 18  # cutoff modes
+  width: 32  # width for Linear at first layer
+  act_fno : gelu 
+  init_func: xavier_uniform
+
+  f_idx: [1,11,1,11] # interval_train, number_train, interval_test, number_test
+  n_train: 500
+  n_test: 100
+  batch_size: 50
+
+  tf_epochs: 500
+  tf_lr: 0.001
+  weight_decay: 0.0001
+  step_size: 50
+  gamma: 0.5
+  save_step: 10 # save model each steps
+  thre_epoch: 300 # condiser early stop after {thre_epoch} epochs
+
+grid_500_MSE:
+  TRAIN_PATH: ../../Data/data/train_grid_84_5000_3.mat
+  TEST_PATH:  ../../Data/data/test_grid_84_500_3.mat
+  save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
+  patience: 10
+  check: False
+  cuda_id: 0 # gpu ids, e.g. 0,1,2,3
+  layer_num: 4 # number of fno layer
+  last_size: 128 # size of last layer
+  modes: 18  # cutoff modes
+  width: 32  # width for Linear at first layer
+  act_fno : gelu 
+  init_func: xavier_uniform
+
+  f_idx: [1,11,1,11] # interval_train, number_train, interval_test, number_test
+  n_train: 500
+  n_test: 100
+  batch_size: 50
+
+  tf_epochs: 500
+  tf_lr: 0.001
+  weight_decay: 0.0001
+  step_size: 50
+  gamma: 0.5
+  save_step: 10 # save model each steps
+  thre_epoch: 300 # condiser early stop after {thre_epoch} epochs
+
+
+non_grid_500_TFM:
+  TRAIN_PATH: ../../Data/data/train_non_grid_84_5000.mat
+  TEST_PATH:  ../../Data/data/test_non_grid_84_500.mat
+  save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
+  patience: 10
+  check: False
+  cuda_id: 1 # gpu ids, e.g. 0,1,2,3
+  layer_num: 4 # number of fno layer
+  last_size: 128 # size of last layer
+  modes: 18  # cutoff modes
+  width: 32  # width for Linear at first layer
+  act_fno : gelu 
+  init_func: xavier_uniform
+
+  f_idx: [1,11,1,11] # interval_train, number_train, interval_test, number_test
+  n_train: 500
+  n_test: 100
+  batch_size: 50
+
+  tf_epochs: 500
+  tf_lr: 0.001
+  weight_decay: 0.0001
+  step_size: 50
+  gamma: 0.5
+  save_step: 10 # save model each steps
+  thre_epoch: 300 # condiser early stop after {thre_epoch} epochs
+
+non_grid_500_MSE:
+  TRAIN_PATH: ../../Data/data/train_non_grid_84_5000.mat
+  TEST_PATH:  ../../Data/data/test_non_grid_84_500.mat
+  save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
+  patience: 10
+  check: False
+  cuda_id: 1 # gpu ids, e.g. 0,1,2,3
+  layer_num: 4 # number of fno layer
+  last_size: 128 # size of last layer
+  modes: 18  # cutoff modes
+  width: 32  # width for Linear at first layer
+  act_fno : gelu 
+  init_func: xavier_uniform
+
+  f_idx: [1,11,1,11] # interval_train, number_train, interval_test, number_test
+  n_train: 500
+  n_test: 100
+  batch_size: 50
+
+  tf_epochs: 500
+  tf_lr: 0.001
+  weight_decay: 0.0001
+  step_size: 50
+  gamma: 0.5
+  save_step: 10 # save model each steps
+  thre_epoch: 300 # condiser early stop after {thre_epoch} epochs
