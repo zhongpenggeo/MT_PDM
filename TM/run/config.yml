@@ -3,7 +3,6 @@ grid_5000:
   TEST_PATH:  ../../Data/data/test_grid_84_500_3.mat
   save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
   patience: 10
-  check: False
   cuda_id: 6 # gpu ids, e.g. 0,1,2,3
   layer_num: 4 # number of fno layer
   last_size: 128 # size of last layer
@@ -31,7 +30,6 @@ grid_500:
   TEST_PATH:  ../../Data/data/test_grid_84_500_3.mat
   save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
   patience: 10
-  check: False
   cuda_id: 0 # gpu ids, e.g. 0,1,2,3
   layer_num: 4 # number of fno layer
   last_size: 128 # size of last layer
@@ -58,7 +56,6 @@ non_grid_5000:
   TEST_PATH:  ../../Data/data/test_non_grid_84_500.mat
   save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
   patience: 10
-  check: False
   cuda_id: 6 # gpu ids, e.g. 0,1,2,3
   layer_num: 4 # number of fno layer
   last_size: 128 # size of last layer
@@ -85,7 +82,6 @@ non_grid_5000_SFM:
   TEST_PATH:  ../../Data/data/test_non_grid_84_500.mat
   save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
   patience: 10
-  check: False
   cuda_id: 4 # gpu ids, e.g. 0,1,2,3
   layer_num: 4 # number of fno layer
   last_size: 128 # size of last layer
@@ -112,7 +108,6 @@ non_grid_5000_3:
   TEST_PATH:  ../../Data/data/test_non_grid_84_500.mat
   save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
   patience: 10
-  check: False
   cuda_id: 3 # gpu ids, e.g. 0,1,2,3
   layer_num: 4 # number of fno layer
   last_size: 128 # size of last layer
@@ -139,7 +134,6 @@ non_grid_128:
   TEST_PATH:  ../../Data/data/test_non_grid_128_100.mat
   save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
   patience: 10
-  check: False
   cuda_id: 4 # gpu ids, e.g. 0,1,2,3
   layer_num: 4 # number of fno layer
   last_size: 128 # size of last layer
@@ -166,7 +160,6 @@ non_block_5000:
   TEST_PATH:  ../../Data/data/block_non_grid_84_500.mat
   save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
   patience: 10
-  check: False
   cuda_id: 3 # gpu ids, e.g. 0,1,2,3
   layer_num: 4 # number of fno layer
   last_size: 128 # size of last layer
@@ -193,7 +186,6 @@ non_grid_2000:
   TEST_PATH:  ../../Data/data/test_non_grid_84_500.mat
   save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
   patience: 10
-  check: False
   cuda_id: 3 # gpu ids, e.g. 0,1,2,3
   layer_num: 4 # number of fno layer
   last_size: 128 # size of last layer
@@ -220,7 +212,6 @@ non_grid_1000:
   TEST_PATH:  ../../Data/data/test_non_grid_84_500.mat
   save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
   patience: 10
-  check: False
   cuda_id: 4 # gpu ids, e.g. 0,1,2,3
   layer_num: 4 # number of fno layer
   last_size: 128 # size of last layer
@@ -247,7 +238,6 @@ non_grid_500:
   TEST_PATH:  ../../Data/data/test_non_grid_84_500.mat
   save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
   patience: 10
-  check: False
   cuda_id: 3 # gpu ids, e.g. 0,1,2,3
   layer_num: 4 # number of fno layer
   last_size: 128 # size of last layer
@@ -274,7 +264,6 @@ non_grid_500_SFM:
   TEST_PATH:  ../../Data/data/test_non_grid_84_500.mat
   save_mode: state_dict # None means saving as .pt file (all model); or state_dict for .pkl file(only parameters of model)
   patience: 10
-  check: False
   cuda_id: 6 # gpu ids, e.g. 0,1,2,3
   layer_num: 4 # number of fno layer
   last_size: 128 # size of last layer

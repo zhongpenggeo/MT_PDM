@@ -1,21 +1,14 @@
 '''
-copy from MT2D.py 
+2-D MT forward modeling code using finite difference method (FDM).
 
 second filed methods (different with total field method)
-
-succeed 
-
-BC class have some bugs so replace with FD1D
-
-
-
 '''
-# from BC import BC_u
 
 import ray
 # ray.init(num_cpus=20, num_gpus=0)
 import numpy as np
 # from scipy.linalg import lu
+import scipy.io as scio
 import scipy.sparse as scipa 
 import scipy.sparse.linalg as scilg
 import cmath as cm
