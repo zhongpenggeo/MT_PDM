@@ -83,3 +83,16 @@ python conv_TM.py grid_5000
 - `scipy`
 
 - `matplotlib`
+
+## Citing
+```
+@article{peng2023rapid,
+  title={Rapid surrogate modeling of magnetotelluric in the frequency domain using physics-driven deep neural networks},
+  author={Peng, Zhong and Yang, Bo and Liu, Lian and Xu, Yixian},
+  journal={Computers \& Geosciences},
+  volume={176},
+  pages={105360},
+  year={2023},
+  publisher={Elsevier}
+}
+```
